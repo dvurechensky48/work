@@ -126,6 +126,7 @@ footer p
 	text-transform:uppercase;
 	font-size:14pt;
 	color:#737373;;
+	padding: 0 15px;
 }
 .nav li a:hover
 {

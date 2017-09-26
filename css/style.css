@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body
+{
+	font-family: 'Roboto', sans-serif;
+	font-size:12pt;
+	font-weight: 300;
+}
+body
+{
+	margin:0;
+	padding:0;
+	
+}
+ul
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h2
+{
+	font-size: 36pt;
+	font-weight: 800;
+}
+h3
+{
+	font-size:24pt;
+	font-weight: 500;
+}
+h4
+{
+	font-size: 16pt;
+	font-weight: 800;
+}
+button
+{
+	position: relative;
+	border:0;
+	background: #861321;
+	color:white;
+	font-size:14pt;
+	text-align:center;
+	padding: 11px;
+	text-transform:uppercase;
+}
+button::after
+{
+	content:"...";
+	padding-left:20px;
+	padding-right: 20px;
+}
+input
+{
+	border:0;
+}
+p
+{
+	font-size: 16pt;
+}
+header
+{
+	border-bottom:4px solid #1175aa;
+}
+header address
+{
+	color: #737373;
+	font-size: 12pt;
+}
+footer
+{
+	background: #808080;
+	padding-top:26px;
+	padding-bottom: 26px;
+	margin-top: 80px;
+}
+footer p
+{
+	color:#fff;
+}
+.container
+{
+	max-width: 1540px;
+	width:100%;
+}
+
+/*
+	HEADER
+*/
+.adress
+{
+	height: 52px;
+}
+.adress .logo
+{
+	position: relative;
+}
+.adress .logo div
+{
+	position: absolute;
+	height: 100px;
+}
+/*
+	END HEADER
+*/
+
+/*
+	NAV
+*/
+.nav
+{
+	height: 28px;
+}
+.nav li
+{
+	display: inline;
+	float:left;
+}
+.nav li a
+{
+	clear: both;
+	text-transform:uppercase;
+	font-size:14pt;
+	color:#737373;;
+}
+.nav li a:hover
+{
+	position: relative;
+	top:-4px;
+	border-top: 4px solid #dbdbdb;
+	background: none;
+}
+.search input
+{
+	height: 24px;
+	padding-top: 2px;
+	border: 2px solid #c8caca;
+}
+
+/* 
+	END NAV
+*/
+
+
+/*
+	SLIDER
+*/
+	.slider
+	{
+		height: 280px;
+		padding-top: 80px;
+		padding-left: 53px;
+	}
+	.slider .title
+	{
+		margin-bottom: 35px;
+	}
+	.slider .des
+	{
+		font-size:16pt;
+	}
+	.slider span
+	{
+		font-size: 24pt;
+		color:#707071;
+		text-decoration: line-through;
+		margin-right:15px;
+	}
+	.slider span.active
+	{
+		color:#000;
+		text-decoration: none;
+	}
+	.slider button
+	{
+		margin-top: 37px;
+	}
+	.switch
+	{
+		text-align: center;
+	}
+	.switch li
+	{
+		display: inline-block;
+		width: 4px;
+		height: 12px;
+		background: #a9abab;
+	}
+	.switch li:not(:first-child)
+	{
+		margin-left:20px;
+	}
+	.switch li.active
+	{
+		background: #0775b6;
+	}
+	.slider .advantage
+	{
+		border-left:4px solid #1175aa;
+	}
+	.slider .advantage h3
+	{
+		font-weight: 800;
+	}
+/******************************
+	END SLIDER
+********************************/	
+
+/****************************
+	BREADCRUMBS
+*****************************/	
+	.crumbs
+	{
+		margin-top:34px; 
+	}
+	.crumb a
+	{
+		color:12pt;
+		color:#787a7a;
+		text-decoration: none;
+	}
+	.crumb a:after
+	{
+	content:"/";
+	padding-left:9px;
+	padding-right: 9px;
+	}
+/****************************
+	END BREADCRUMBS
+****************************/	
+
+/****************************
+	CATALOG
+****************************/
+.catalog
+{
+	margin-top: 14px;
+}
+.catalog .menu
+{
+	height: 60px;
+	background: #1175aa;
+}
+.dropdown
+{
+	list-style-type:none;
+}
+.dropdown #drop1
+{
+	display: block;
+	color:#fff;
+	text-decoration: none;
+	font-size: 18pt;
+	line-height: 60px;
+}
+.dropdown-menu
+{
+	display: none;
+	width: 100%;
+	position: absolute;
+	left:0px;
+	margin: 0;
+	padding: 0;
+}
+.dropdown-menu li
+{
+	height: 60px;
+}
+.dropdown-menu li a
+{
+	display: block;
+	text-align: left;
+	line-height: 60px;
+	font-size: 16pt;
+}
+.dropdown-menu li a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.catalog-search
+{
+	
+}
+.catalog-search input
+{
+	width: 100%;
+	height: 32px;
+	margin-top: 14px;
+}
+.search-but a
+{
+	display: block;
+	text-align: center;
+	line-height: 60px;
+}
+.catalog .text
+{
+	margin-top:54px; 
+}
+.catalog .text p
+{
+	margin-top:20px; 
+}
+
+/****************************
+	END CATALOG
+****************************/
+
+/****************************
+	 PRODUCT
+****************************/
+
+.product
+{
+	position: relative;
+	overflow: none;
+	margin-top:80px;
+}
+.product li
+{
+	height: 370px;
+}
+.product .title
+{
+	position: relative;
+	text-align: center;
+}
+.product li::after
+{
+	content: "";
+	height: 100%;
+}
+.product .title a
+{
+	font-size: 16pt;
+	color:#000;
+}
+.product .img
+{
+	position: absolute;
+	top:75px;
+	text-align: center;
+}
+.product .img img
+{
+	width:50%;
+}
+
+.product .size
+{
+	width: 100%;
+	position: absolute;
+	top:250px;
+	font-size: 12pt;
+	text-align: center;
+	color:#787a7a;
+}
+.product .price
+{
+	position: absolute;
+	top:304px;
+	width:100%;
+	text-align: center;
+	font-size:16pt;
+	color: #000;
+}
+.product .more
+{
+	position: absolute;
+	top:347px;
+	width:100%;
+	font-size:16pt;
+	text-align: center;
+	color:#787a7a;
+	text-decoration: underline;
+
+}
+.product .more:hover
+{
+	color: #016da8;
+}
+
+/****************************
+	END PRODUCT
+****************************/
+
+/****************************
+	PAGINATION
+****************************/
+	.pagination
+	{
+		margin-top: 54px;
+		margin-bottom: 60px;
+	}
+	.pagination li
+	{
+		margin-left: 3px;
+	}
+	.pagination li a:not(:last-child)
+	{
+		width: 30px;
+		height: 30px;
+	}
+
+	.pagination>li>a
+	{
+		padding: 10px 15px;
+		margin-left:4px;
+		color:#000;
+		font-size: 16pt;
+	}
+	.pagination>li:first-child>a, .pagination>li:first-child>span
+	{
+		border-top-left-radius: 0px;
+    	border-bottom-left-radius: 0px;
+	}
+	.glyphicon-play
+	{
+		font-size: 12pt;
+		color: #dcdcdc;
+	}
+
+/****************************
+	END PAGINATION
+****************************/
+
+
+/*
+CATALOG OF PRODUCT
+*/
+	.cat-of-prod
+	{
+		position: relative;
+		margin-top: 125px;
+		border-bottom: 4px solid #1175aa;
+		z-index: -1;
+
+	}
+	.cat-of-prod h3
+	{
+		font-weight: 800;
+		margin-left:150px;
+	}
+	.cat-of-prod .icon
+	{
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		background: #dbdbdb;
+		top:-20px;
+		z-index: 1;
+	}
+	.case
+	{
+		position: relative;
+	}
+	.case section
+	{
+		margin-top: 40px;
+	}
+	.case .backgr div
+	{
+		width: 100%;
+		height: 256px;
+		background: black;
+	}
+	.case .title
+	{
+		height: 60px;
+	}
+	.case .title .desc div
+	{
+		position: relative;
+		background: #d6d9d9;
+		color: #1182c2;
+		font-size: 20pt;
+		width: 60px;
+		height: 100%;
+		text-align: center;
+		line-height: 60px;
+		font-weight: 800;
+		float: left;
+		margin-right: 20px;
+	}
+	.case .title .desc
+	{
+		line-height: 30px;
+		font-size: 16pt;
+	}
+	.case .img
+	{
+		width: 200px;
+		height: 140px;
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+		background-color: #ffffff;
+		float: left;
+	}
+	.case .txt .sale
+	{
+		width: 100%;
+		height: 40px;
+		background: #016da7;
+		color:#fff;
+		text-align: center;
+		font-size: 16pt;
+		line-height: 40px;
+		margin-bottom: 15px;
+	}
+	
+
+	.case .txt .sale-min
+	{
+		font-size: 14pt;
+		color: #717171;
+	}
+	.case .txt div
+	{
+		font-size: 14px;
+		color: rgb(1,1,1);
+	}
+	.case .link
+	{
+		font-size: 16pt;
+		color:#717171;
+		text-decoration: underline;
+	}
+	.slidebar
+	{
+		background: #fafafa;
+		margin-top:40px;
+	}
+	.slidebar .title
+	{
+		width:100%;
+		height: 100px;
+		background: #1175aa;
+		font-size: 16pt;
+		color:#fff;
+		line-height: 50px;
+		text-align: center;
+		font-weight: 800;
+	}
+	.slidebar .title div
+	{
+		width:100px;
+		height: 100%;
+		background: #d6d9d9;
+		text-align: center;
+		line-height: 100px;
+		float: left;
+	}
+
+
+
+/*
+END CATALOG OF PRODUCT
+*/
+
+/*
+PRODUCTION
+*/
+		
+	.production .col1 li
+	{	
+		height: 25px;
+		margin-bottom:20px;
+	}
+	.production .col1 li::before
+	{
+		content:" ";
+		position: relative;
+		display: block;
+		top:50%;
+		float: left;
+		width: 80px;
+		height: 4px;
+		background: #d6d9d9;
+		margin-right: 20px;
+	}
+	.production .col1 a
+	{	
+		color:black;
+		font-size: 16pt;
+	}
+	.production .col1 li:hover:before
+	{
+		background: #016da7;
+	}
+	.col2
+	{
+		background: #fff;
+	}
+	.col2 p
+	{
+		margin-bottom:22px;
+	}
+	.col2 button
+	{
+		margin-top: 20px;
+	}
+	.col2 button::after
+	{
+		display: none;
+	}
+	.col1, .col2
+	{
+		margin-top: 100px;
+	}
+	.col3,.col4
+	{
+		overflow: hidden;
+		height: 184px;
+		margin-top:80px;
+	}
+	.col3::before, .col4::before
+	{
+		content: "";
+		float: left;
+		display: block;
+		position: relative;
+		background:#1175aa; 
+		width: 4px;
+		height: 100%;
+		margin-right: 56px;
+	}
+	.col1 h3, .col2 h3
+	{
+		margin-bottom: 38px;
+	}
+	.col3 li, .col4 li
+	{
+		margin-top: 15px;
+	}
+	.col3 li a, .col4 li a
+	{
+		color: #000;
+		font-size: 16pt;
+		text-decoration: underline;
+	}
+
+/*
+END PRODUCTION
+*/
+
+/*
+PARTNERS
+*/
+	.part ul
+	{
+		height: 60px;
+		width: 80%;
+		margin-left: 10%;
+		
+	}
+	.part ul li
+	{
+		display: block;
+		height: 100%;
+		
+	}
+	.part ul {
+        text-align: justify;
+
+        /* Обнуляем для родителя*/
+        line-height: 0;
+        font-size: 1px; /* 1px для Opera */
+        margin-top:88px;
+        margin-bottom: 88px;
+        text-justify: newspaper;
+        zoom:1;
+}
+        .part ul:after {
+                        width: 100%;
+                        height: 0;
+                        visibility: hidden;
+                        overflow: hidden;
+                        content: '';
+                        display: inline-block;
+
+        }
+              .part  ul li  {
+                        display: inline-block;
+                        text-align: left;
+                        line-height: normal;
+                        font-size: 14px;
+						vertical-align: top;
+
+                        /* эмуляция inline-block для IE6-7*/
+                        //display : inline;
+                        //zoom : 1;
+                }
+/*
+END PARTNERS
+*/
+
+/*
+	NEWS	
+*/
+	.news section
+	{
+		margin-top:46px;
+	}
+	.news .center
+	{
+		text-align: center;
+	}
+	.news button
+	{
+		margin-top: 100px;
+	}
+	.news .link
+	{
+		color:#016da8;
+		font-size:16pt;
+		border-bottom:4px solid #dbdbdb;
+	}
+	.news .link:hover
+	{
+		text-decoration: none;
+	}
+	.news section p
+	{
+
+		margin-top: 12px;
+	}
+	.viki
+	{
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+		background-color: #ffffff;
+		margin-top: 25px;
+	}
+	.viki .link
+	{
+		font-size: 16pt;
+		color: black;
+		float: right;
+		text-align: right;
+		text-decoration: underline;
+	}
+	button.viki
+	{
+		background: #7f7f7f;
+	}
+	
+/*
+	END NEWS	
+*/
+
+
+
+/*
+FOOTER
+*/
+	.nav-footer
+	{
+		font-size: 16pt;
+		text-transform: uppercase;
+	}
+	.nav-footer li
+	{
+		margin-bottom: 10px;
+	}
+	.nav-footer a
+	{
+		color:#fff;
+		text-decoration: underline;
+	}
+/*
+END FOOTER
+*/

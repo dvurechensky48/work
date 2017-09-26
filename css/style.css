@@ -767,6 +767,20 @@ FOOTER
 		color:#fff;
 		text-decoration: underline;
 	}
+	footer .numb:not(:last-child)
+	{
+		margin-right: 24px;
+	}
+	footer .right
+	{
+		text-align: right;
+	}
+	footer .octavian
+	{
+		color: #54bbf3;
+		text-decoration: underline;
+	}
+	
 /*
 END FOOTER
 */

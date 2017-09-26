@@ -470,7 +470,6 @@ CATALOG OF PRODUCT
 	{
 		width: 100%;
 		height: 256px;
-		background: black;
 	}
 	.case .backgr div:hover:before
 	{
@@ -479,6 +478,20 @@ CATALOG OF PRODUCT
 		width: 100%;
 		height: 100%;
 		background: rgba(1,109,167,0.65);
+	}
+	#bg1
+	{
+		background-image: url(../img/catalog-fon1.png);
+		background-size: cover;
+		background-position: 50% 80%; /* Положение фона */
+    	background-repeat: no-repeat; /* Отменяем повторение фона */
+	}
+	#bg2
+	{
+		background-image: url(../img/catalog-fon2.png);
+		background-size: cover;
+		background-position: 50% 80%; /* Положение фона */
+    	background-repeat: no-repeat; /* Отменяем повторение фона */
 	}
 	.case .title
 	{
